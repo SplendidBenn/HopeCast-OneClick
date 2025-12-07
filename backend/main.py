@@ -21,7 +21,9 @@ else:
     with open(KEY_PATH, "wb") as f:
         f.write(sk.to_pem())
 vk = sk.verifying_key
-
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
 @app.get("/", response_class=HTMLResponse)
 def home():
     return """
