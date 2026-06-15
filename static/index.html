@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HopeCast - One Click</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f8f9fa; }
+    h1 { color: #d32f2f; }
+    textarea, input { width: 80%; max-width: 600px; padding: 15px; margin: 10px 0; font-size: 16px; }
+    button { padding: 15px 40px; font-size: 20px; background-color: #d32f2f; color: white; border: none; border-radius: 8px; cursor: pointer; margin: 10px; }
+    button:hover { background-color: #b71c1c; }
+    #status { margin-top: 30px; font-size: 18px; font-weight: bold; color: #d32f2f; }
+  </style>
+</head>
+<body>
+  <h1>HopeCast</h1>
+  <p>One Click → The Whole World</p>
+
+  <!-- Original Text Broadcast -->
+  <textarea id="message" placeholder="Enter your message of hope..."></textarea><br>
+  <button onclick="sendTextMessage()">REACH THE GLOBE</button>
+
+  <!-- New Multi-Platform Broadcast -->
+  <h2>Advanced One-Click Broadcast</h2>
+  <input type="text" id="socialHandles" placeholder="Your social handles (comma separated)" value="whatsapp,facebook,instagram,x">
+  <input type="file" id="mediaFile" accept="image/*,video/*">
+  <button onclick="sendMultiBroadcast()">TEXT-MEDIA TO SOCIAL MEDIA & WORLD</button>
+
+  <div id="status"></div>
+
+  <script>
+    async function sendTextMessage() {
+      const msg = document.getElementById('message').value.trim();
+      if (!msg) return alert("Enter a message!");
+      document.getElementById('status').innerHTML = "Sending text...";
+      // Existing text broadcast
+      await fetch('/broadcast', { method: 'POST', body: 'message=' + encodeURIComponent(msg) });
+      document.getElementById('status').innerHTML = "Text sent successfully!";
+    }
+
+    async function sendMultiBroadcast() {
+      const msg = document.getElementById('message').value.trim();
+      const handles = document.getElementById('socialHandles').value;
+      const fileInput = document.getElementById('mediaFile');
+      const file = fileInput.files[0];
+
+      if (!msg) return alert("Enter a message!");
+
+      document.getElementById('status').innerHTML = "Sending to social media & world...";
+
+      const formData = new FormData();
+      formData.append('message', msg);
+      formData.append('handles', handles);
+      if (file) formData.append('media', file);
+
+      try {
+        const res = await fetch('/broadcast-multi', {
+          method: 'POST',
+          body: formData
+        });
+        const data = await res.json();
+        document.getElementById('status').innerHTML = `✅ Sent to ${data.reached}`;
+      } catch (e) {
+        document.getElementById('status').innerHTML = "Error sending multi-broadcast";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+access_token: fm2_lJPECAAAAAAAC1VYxBAwp0kuzvMK7AHiqGhWX1X4wrVodHRwczovL2FwaS5mbHkuaW8vdjGUAJLOABTRXx8Lk7lodHRwczovL2FwaS5mbHkuaW8vYWFhL3YxxDw6gNOUoZjj/kcH5CXrnOUZbZjvB2+0yfT3Hvfj3bps1yVo18pEMteIXaI0pMwher1Lc6+tdPZJgg+IthnETsf0mU1LMs4Cv54FotIIn5dEf2wm9t1HZ1OhVTmyYiQDQz8uvG1/FD4BJcjkKxhVwbrHqxJhXRkNsgjsQ+aJ108VrFrWjuEy+Kqk2tFHk8QgCz3ogsuIe/Fsw8U3AF/mn3VyiYoaiMouUil1T035nEc=,fm2_lJPETsf0mU1LMs4Cv54FotIIn5dEf2wm9t1HZ1OhVTmyYiQDQz8uvG1/FD4BJcjkKxhVwbrHqxJhXRkNsgjsQ+aJ108VrFrWjuEy+Kqk2tFHk8QQFTOdxXA73ahQCtpCaETGd8O5aHR0cHM6Ly9hcGkuZmx5LmlvL2FhYS92MZYEks5pYRrPzmlhHUUXzgAT/s0Kkc4AE/7NxCCqIWtG6fhpEJpQbhRLJX1bPQF2GflHxt5bANhKbtqtZg==,fo1_oIVqu4lNnT3VG97TV0ikTKb8zdfRrW2fnqkzqzatlJ8
+app_secrets_minvers: {}
+last_login: 2026-01-08T10:42:13.9365012+01:00
+metrics_token: FlyV1 fm2_lJPECAAAAAAAC1VYxBC0niQYOg45/TFQztbObt65wrVodHRwczovL2FwaS5mbHkuaW8vdjGUAJLOABTRXwALk7lodHRwczovL2FwaS5mbHkuaW8vYWFhL3YxxDxsGHKgMRvwS6wKooZpHq5NPy1heUGkrbltMPAVlD30sMHm/RYivma5w9rc9buEmdJxVz3jf2lr7UVMbcvETqY65GjehZTpuAK2WxUJ6PUI3CF4v1G6Jd4MeB5RBA3+SjBDNWr6mLLgMIJC/Rf8FUphlcIk82URGSCYbsmf8LR1sF/w47xWIEkxnLN8sMQg3AYy1KoOBcZzbIfUj34L0xKzAG9onHAULLlbGiGndlc=,fm2_lJPETqY65GjehZTpuAK2WxUJ6PUI3CF4v1G6Jd4MeB5RBA3+SjBDNWr6mLLgMIJC/Rf8FUphlcIk82URGSCYbsmf8LR1sF/w47xWIEkxnLN8sMQQ/skHQhOCGHkmGqwjyRDqYcO5aHR0cHM6Ly9hcGkuZmx5LmlvL2FhYS92MZgEks5pX6XnzwAAAAElV8QFF84AE/7NCpHOABP+zQzEEBgkMkpPkde3d/eTrsdGvXvEIOYZyBtYb6H25oaTL8vIrWOUVGZiFvMaPifJ2L5AxhMu
+wire_guard_state:
+    personal:
+        org: personal
+        name: interactive-HUBGSTBU-collinz-uzoma-gmail-com-01KEEXVV6XVEB5TESAXQP2XXNT
+        region: bom
+        localpublic: 5lIZfyV0+HMMaGEHekd/OQipap0qYs39takRpJCJ3no=
+        localprivate: g0RSAtuFbCyjYsnVA0qZ//yX123amOWWU9Th7vCwiuk=
+        dns: ""
+        peer:
+            peerip: fdaa:38:d8ee:a7b:339:0:a:102
+            endpointip: bom1.gateway.6pn.dev
+            pubkey: e3VEeKrNA9d9tLq9V1Nr7F4hNgCRcQEB8dcJ93JJjGY=
